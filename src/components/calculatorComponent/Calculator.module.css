@@ -37,7 +37,7 @@
   grid-column-end: 5;
   padding: 0;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .calculatorValue {
@@ -47,6 +47,21 @@
 .zeroValueContainer {
   grid-column-start: 1;
   grid-column-end: 3;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+}
+
+button:hover {background-color: #555e55}
+
+button:active {
+  background-color: #555e55;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
 }
 
 
