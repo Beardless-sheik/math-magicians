@@ -1,37 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import cx from 'classnames';
 import styles from './Calculator.module.css';
+import calculate from './logic/calculate';
 
 const CalculatorUI = () => {
-  // const [calcValue, setCalcValue] = useState(0);
-  const calcValue = 2;
+  const [state, setState] = useState({
+    total: 0,
+    next: '',
+    operation: '',
+  });
+
+  const handleButtonClick = (event) => {
+    const calculator = calculate(state, event.target.textContent.trim());
+    setState({ ...state, ...calculator });
+  };
+
   return (
     <>
       <div className={styles.container}>
         <div className={cx(styles.grid1, styles.calculatorValueContainer)}>
           <div className={styles.calculatorValue}>
-            {calcValue}
+            {state.total}
+            {state.operation}
+            {state.next}
           </div>
         </div>
-        <div className={styles.gridLightGreyContainer}> AC </div>
-        <div className={styles.gridLightGreyContainer}> +/- </div>
-        <div className={styles.gridLightGreyContainer}> % </div>
-        <div className={styles.gridOrangeContainer}> + </div>
-        <div className={styles.gridLightGreyContainer}> 7 </div>
-        <div className={styles.gridLightGreyContainer}> 8 </div>
-        <div className={styles.gridLightGreyContainer}> 9 </div>
-        <div className={styles.gridOrangeContainer}> * </div>
-        <div className={styles.gridLightGreyContainer}> 4 </div>
-        <div className={styles.gridLightGreyContainer}> 5 </div>
-        <div className={styles.gridLightGreyContainer}> 6 </div>
-        <div className={styles.gridOrangeContainer}> - </div>
-        <div className={styles.gridLightGreyContainer}> 1 </div>
-        <div className={styles.gridLightGreyContainer}> 2 </div>
-        <div className={styles.gridLightGreyContainer}> 3 </div>
-        <div className={styles.gridOrangeContainer}> + </div>
-        <div className={cx(styles.gridLightGreyContainer, styles.zeroValueContainer)}> 0 </div>
-        <div className={styles.gridLightGreyContainer}> . </div>
-        <div className={styles.gridOrangeContainer}> = </div>
+        <button type="button" className={styles.gridLightGreyContainer} onClick={handleButtonClick}> AC  </button>
+        <button type="button" className={styles.gridLightGreyContainer} onClick={handleButtonClick}> +/- </button>
+        <button type="button" className={styles.gridLightGreyContainer} onClick={handleButtonClick}> % </button>
+        <button type="button" className={styles.gridOrangeContainer} onClick={handleButtonClick}> + </button>
+        <button type="button" className={styles.gridLightGreyContainer} onClick={handleButtonClick}> 7 </button>
+        <button type="button" className={styles.gridLightGreyContainer} onClick={handleButtonClick}>  8 </button>
+        <button type="button" className={styles.gridLightGreyContainer} onClick={handleButtonClick}> 9 </button>
+        <button type="button" className={styles.gridOrangeContainer} onClick={handleButtonClick}> x </button>
+        <button type="button" className={styles.gridLightGreyContainer} onClick={handleButtonClick}> 4 </button>
+        <button type="button" className={styles.gridLightGreyContainer} onClick={handleButtonClick}> 5 </button>
+        <button type="button" className={styles.gridLightGreyContainer} onClick={handleButtonClick}> 6 </button>
+        <button type="button" className={styles.gridOrangeContainer} onClick={handleButtonClick}> - </button>
+        <button type="button" className={styles.gridLightGreyContainer} onClick={handleButtonClick}> 1 </button>
+        <button type="button" className={styles.gridLightGreyContainer} onClick={handleButtonClick}> 2 </button>
+        <button type="button" className={styles.gridLightGreyContainer} onClick={handleButtonClick}> 3 </button>
+        <button type="button" className={styles.gridOrangeContainer} onClick={handleButtonClick}> + </button>
+        <button type="button" className={cx(styles.gridLightGreyContainer, styles.zeroValueContainer)} onClick={handleButtonClick}> 0 </button>
+        <button type="button" className={styles.gridLightGreyContainer} onClick={handleButtonClick}> . </button>
+        <button type="button" className={styles.gridOrangeContainer} onClick={handleButtonClick}> = </button>
       </div>
     </>
   );
