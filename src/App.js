@@ -1,9 +1,9 @@
 import './App.css';
-import CalculatorUi from './components/calculator-component/Calculator';
+import CalculatorUI from './components/calculatorComponent/Calculator';
 
 function App() {
   return (
-    <CalculatorUi />
+    <CalculatorUI />
   );
 }
 
