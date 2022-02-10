@@ -12,7 +12,7 @@ const NavBar = () => (
             <Link to="/" className={styles.borderRightList}> Home </Link>
           </li>
           <li className={cx(styles.linkItem)}>
-            <Link to="/calculator" className={styles.borderRightList} > Calculator </Link>
+            <Link to="/calculator" className={styles.borderRightList}> Calculator </Link>
           </li>
           <li className={styles.linkItem}>
             <Link to="/quote"> Quote </Link>
