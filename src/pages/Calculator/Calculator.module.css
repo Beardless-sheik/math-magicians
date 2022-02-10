@@ -1,0 +1,12 @@
+.calculatorContainer {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin: 20px;
+  height: 80vh;
+}
+
+.mathText {
+  place-self: center;
+  font-weight: 800;
+  font-size: 2rem;
+}

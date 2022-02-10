@@ -1,6 +1,50 @@
-# Getting Started with Create React App
+# Math Magicians 
+
+## Description: 
+>"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
+Make simple calculations.
+Read a random math-related quote.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Built With
+
+This project is build with:
+
+- HTML
+- CSS
+- React
+- Create React App to bootstrap
+- CCS Modules & classNames package for styling 
+
+
+## Getting Started
+
+If you want to run the project locally in your browser you need to install: 
+
+  - Node
+  - Npm (Node Package Manager)
+  - Git
+  - Text Editor
+
+To get the content of this project locally you need to run this command in your terminal:
+
+ > `git clone https://github.com/Beardless-sheik/math-magicians.git`
+
+You need to then install the packages locally to your system by running: 
+
+ > npm install 
+
+To start the server in development mode, Run: 
+
+ > npm run dev 
+
+## 👤 Author
+
+👤 **Alick Nyirenda**
+- GitHub: [@githubhandle](https://github.com/Beardless-sheik)
+- Twitter: [@twitterhandle](https://twitter.com/Beardless_Sheik)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/alick-nyirenda/)
 
 ## Available Scripts
 
@@ -14,10 +58,17 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### Test
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+For tracking linter errors locally you need to follow these steps:
+
+- And for tracking the linter errors in CSS files run:
+
+  > npx stylelint "**/*.css"
+
+- And for tracking the linter errors in JS files run:
+
+  > npx eslint .
 
 ### `npm run build`
 
@@ -43,7 +94,6 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
@@ -65,6 +115,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to check the [issues page](https://github.com/Beardless-sheik/AwesomeBooks/issues) for comments and please offer any contributions!
+
+## Show your support
+
+Give a :star: if you like this project!
+
+## Acknowledgments
+
+- Thanks to [Microverse](www.microverse.org) team that helped with project guidelines
