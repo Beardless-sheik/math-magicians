@@ -1,8 +1,9 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import CalculatorUI from './components/calculatorComponent/Calculator';
+import Calculator from './pages/Calculator/Calculator';
 import NavBar from './components/navBarComponent/NavBar';
 import Home from './pages/Home/Home';
+import Quote from './pages/Quote/Quote';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="calculator" element={<CalculatorUI />} />
+        <Route path="calculator" element={<Calculator />} />
+        <Route path="quote" element={<Quote />} />
       </Routes>
     </>
   );

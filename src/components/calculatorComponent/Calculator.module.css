@@ -1,11 +1,5 @@
 .container {
   width:  70%;
-  height: 80vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   margin:  30px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
