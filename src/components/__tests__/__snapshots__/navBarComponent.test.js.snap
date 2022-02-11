@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator page component renders correctly 1`] = `
+<div
+  className="navContainer"
+>
+  <h1>
+     Math Magicians 
+  </h1>
+  <div
+    className="navLinkCenter"
+  >
+    <ul
+      className="linkContainer"
+    >
+      <li
+        className="linkItem"
+      >
+        <a
+          className="borderRightList"
+          href="#/"
+          onClick={[Function]}
+        >
+           Home 
+        </a>
+      </li>
+      <li
+        className="linkItem"
+      >
+        <a
+          className="borderRightList"
+          href="#/calculator"
+          onClick={[Function]}
+        >
+           Calculator 
+        </a>
+      </li>
+      <li
+        className="linkItem"
+      >
+        <a
+          href="#/quote"
+          onClick={[Function]}
+        >
+           Quote 
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`NavBar component renders correctly 1`] = `
+<div
+  className="navContainer"
+>
+  <h1>
+     Math Magicians 
+  </h1>
+  <div
+    className="navLinkCenter"
+  >
+    <ul
+      className="linkContainer"
+    >
+      <li
+        className="linkItem"
+      >
+        <a
+          className="borderRightList"
+          href="#/"
+          onClick={[Function]}
+        >
+           Home 
+        </a>
+      </li>
+      <li
+        className="linkItem"
+      >
+        <a
+          className="borderRightList"
+          href="#/calculator"
+          onClick={[Function]}
+        >
+           Calculator 
+        </a>
+      </li>
+      <li
+        className="linkItem"
+      >
+        <a
+          href="#/quote"
+          onClick={[Function]}
+        >
+           Quote 
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`NavBar page component renders correctly 1`] = `
+<div
+  className="navContainer"
+>
+  <h1>
+     Math Magicians 
+  </h1>
+  <div
+    className="navLinkCenter"
+  >
+    <ul
+      className="linkContainer"
+    >
+      <li
+        className="linkItem"
+      >
+        <a
+          className="borderRightList"
+          href="#/"
+          onClick={[Function]}
+        >
+           Home 
+        </a>
+      </li>
+      <li
+        className="linkItem"
+      >
+        <a
+          className="borderRightList"
+          href="#/calculator"
+          onClick={[Function]}
+        >
+           Calculator 
+        </a>
+      </li>
+      <li
+        className="linkItem"
+      >
+        <a
+          href="#/quote"
+          onClick={[Function]}
+        >
+           Quote 
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

@@ -19,7 +19,7 @@ const CalculatorUI = () => {
     <>
       <div className={styles.container}>
         <div className={cx(styles.grid1, styles.calculatorValueContainer)}>
-          <div className={styles.calculatorValue}>
+          <div data-testid="result" className={styles.calculatorValue}>
             {state.total}
             {state.operation}
             {state.next}
